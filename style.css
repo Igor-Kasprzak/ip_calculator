@@ -1,0 +1,61 @@
+:root {
+    --black: #000;
+    --white: #fff;
+    --color-main: #3F8EFC;
+    --color-main-light: #87BFFF;
+    --color-main-lighter: #ADD7F6;
+    --color-main-dark: #2667FF;
+    --color-sub: #3B28CC;
+    --color-sub-secondary: #12ffa4;
+}
+
+body {
+    background-color: var(--color-main-light);
+    color: var(--white);
+}
+
+hr {
+    clear: both;
+    margin: 30px 0;
+    border-color: var(--color-sub);
+}
+
+div {
+    float: left;
+}
+
+input, select {
+    padding: 5px;
+    background-color: var(--color-main);
+    border: 2px solid var(--color-main-dark);
+    border-radius: 20px;
+}
+
+select {
+    border-radius: 10px 10px 0 0;
+}
+
+body > div, form > div {
+    width: 70%;
+}
+
+.formRow {
+    clear: both;
+    width: 100%;
+    padding: 10px;
+}
+
+.formRow div {
+    min-width: 125px;
+}
+
+.output {
+    padding: 10px;
+    background-color: var(--color-sub);
+    border: 2px solid var(--color-main-dark);
+}
+
+.button {
+    background-color: var(--color-sub-secondary);
+    padding: 5px 10px;
+}

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script type="text/javascript" src="script.js"></script>
+    <link rel="stylesheet" href="style.css"/>
+</head>
+<body onload="init();">
+<form name="formIp" id="formIp">
+    <div>
+        <div class="formRow">
+            <div>Klasa:</div>
+            <div class="radio">
+                <label>A<input type="radio" name="classIp" value="0" checked="checked" onchange="updateClass();"/></label>
+                <label>B<input type="radio" name="classIp" value="9" onchange="updateClass();"/></label>
+                <label>C<input type="radio" name="classIp" value="17" onchange="updateClass();"/></label>
+            </div>
+        </div>
+        <div class="formRow">
+            <div>Adres IP:</div>
+            <div>
+                <input type="text" name="addressIp" value="" required>
+            </div>
+        </div>
+        <div class="formRow">
+            <div>Maska:</div>
+            <div>
+                <select name="maskIp">
+                </select>
+            </div>
+        </div>
+        <div class="formRow">
+            <div>
+                <input type="button" value="LICZ" onclick="showOutput()" class="button">
+            </div>
+        </div>
+    </div>
+</form>
+<hr/>
+<div>
+    <div class="formRow">
+        <div>Adres bazowy:</div>
+        <div class="output" id="outputBase"></div>
+    </div>
+    <div class="formRow">
+        <div>Pierwszy host:</div>
+        <div class="output" id="outputFirst"></div>
+    </div>
+    <div class="formRow">
+        <div>Ostatni host:</div>
+        <div class="output" id="outputLast"></div>
+    </div>
+    <div class="formRow">
+        <div>Adres nadawania:</div>
+        <div class="output" id="outputBroadcast"></div>
+    </div>
+</div>
+</body>
+</html>
